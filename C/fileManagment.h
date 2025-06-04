@@ -7,6 +7,6 @@ typedef struct note{
     char content[255];
 } Note;
 
-void readFile(Note arr[100]);
+bool readFile(Note arr[100]);
 bool writeFile(Note arr[100]);
 #endif
