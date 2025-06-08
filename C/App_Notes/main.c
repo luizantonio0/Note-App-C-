@@ -140,6 +140,7 @@ void readInMemory(){
     size = lenght(notes);
 }
 
+//=========================================================================================================================================
 
 int main(){
 
@@ -167,23 +168,25 @@ int main(){
         {
             system("cls");
 
-            char titleUpdate[50];
-            printf("What is the title of the note you wanna update? ");
-            fgets(titleUpdate, 50, stdin);
+            int noteId;
+            printf("What is the id of the note you wanna update? ");
+            scanf("%d", &noteId);
+            fflush(stdin);
 
 
-            if (!update(binarySearch(titleUpdate))) printf("Note not found!");
+            if (!update(noteId-1)) printf("Note not found!");
             break;
         }
         case 4:
         {
             system("cls");
             
-            char titleRemove[50];
-            printf("What is the title of the note you wanna remove? ");
-            fgets(titleRemove, 50, stdin);
+            int noteId;
+            printf("What is the id of the note you wanna update? ");
+            scanf("%d", &noteId);
+            fflush(stdin);
 
-            if (!erase(binarySearch(titleRemove))) printf("Note not found!");
+            if (!erase(noteId)) printf("Note not found!");
             system("cls");
             break;
         }
@@ -199,7 +202,6 @@ int main(){
             case 's':
             case 'S':
                 saveInMemory(notes);
-                break;
             case 'n':
             case 'N':
                 printf("Exiting the application.\n");
