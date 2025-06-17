@@ -1,6 +1,6 @@
 # Note App C
 
-Este é um aplicativo simples de anotações feito em linguagem C. Ele permite criar, visualizar, atualizar e remover notas, armazenando tudo em memória durante a execução.
+Este é um aplicativo simples de anotações escrito em C. Permite criar, visualizar, atualizar e remover notas, armazenando tudo em memória durante a execução.
 
 ## Funcionalidades
 - Adicionar uma nova nota
@@ -9,7 +9,7 @@ Este é um aplicativo simples de anotações feito em linguagem C. Ele permite c
 - Remover uma nota
 - Ordenação automática das notas por título
 
-## Como usar
+## Como Usar
 1. Compile o programa:
    
    ```sh
@@ -26,11 +26,11 @@ Este é um aplicativo simples de anotações feito em linguagem C. Ele permite c
 
 ## Estrutura do Projeto
 - `main.c`: Código-fonte principal do aplicativo.
-- `build/`, `output/`: Pastas de saída de compilação.
+- `build/`, `output/`: Pastas de saída de build.
 
 ## Observações
 - As notas não são salvas em arquivo, apenas em memória.
 - Limite de 100 notas.
 
 ---
-Desenvolvido para fins didáticos.
+Desenvolvido para fins educacionais.
